@@ -10,11 +10,13 @@ Make sure to learn what the starter code does!!
 
 body{
   color: black;
-  font-family: sans-serif;
+  font-family: 'Andika', sans-serif;
   font-size: 16px;
   margin: 1.2em;
   background-size: cover ;
+  background-image: url("../images/pigeon-background.JPEG") ;
   background-position: center;
+  background-color: #dddddd;
 }
 
 main{
@@ -32,37 +34,93 @@ caption{
   margin:5px 0px;
 }
 
-p{}
+p{
+  color: #000000;
+  font-size: 16px;
+  padding-top: 10px;
+}
 
-a{}
+a{
+  color: #C12258;
+  font-size: 16px;
+  text-decoration-style: wavy;
+}
+*:focus{
+  border: 2px solid #000000;
+}
 
 table{
-    border: 2px solid black;
-}
+    border: 2px solid #000000;
+    margin: auto;
+    border-spacing: 0px;
+    border-radius: 15px;
+    border-collapse: separate;
+  }
+
 
 .colhead{
   background-color: #7e0820;
-  color: white;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 100px;
+  padding: 10px;
 }
 
-.rowhead{}
+.rowhead{
+  border-top: 2px solid #000000;
+}
 
 td{
   padding: 15px;
+  text-align: center;
+  border-top: 2px solid #000000;
 }
 
-tr{}
+tr{
 
-*{}
+}
 
-thead tr:first-child th:first-child{}
+thead tr th:first-child{
+  border-top-left-radius: 15px;
+}
+
+thead tr th:last-child{
+  border-top-right-radius: 15px;
+}
+
+tbody tr:last-child th{
+  border-bottom-left-radius: 15px;
+}
+
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 15px;
+}
+tr:nth-child(odd){
+  background-color: #d1d1d1;
+}
+
+tr:hover{
+  background-color: rgba(126,8,32,0.5)
+}
+
+
+
+
+thead tr:first-child th:first-child{
+
+}
 
 footer{
   position:fixed;
   left:0px;
   bottom:0px;
   width:100%;
-  background:black;
+  min-height: 60px;
+  background-color:#000000;
   text-align:center;
+}
+
+footer p{
   color: white;
 }
