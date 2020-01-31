@@ -78,7 +78,7 @@ td{
 }
 
 tr{
-
+  text-align: center;
 }
 
 thead tr th:first-child{
@@ -108,7 +108,7 @@ tr:hover{
 
 
 thead tr:first-child th:first-child{
-
+  border-left: none;
 }
 
 footer{
